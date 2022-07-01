@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #EFE;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid #d1dae3;
+    box-shadow: 0px 15px 15px rgb(0 0 0 / 40%), 0px -15px 15px rgb(255 255 255 / 30%), inset 0px 5px 5px rgb(0 0 0 / 40%), inset 0px -5px 5px rgb(255 255 255 / 30%);
+    background-color: white;
+    background-image: url(../images/clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.btn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: translateX(10px);
+}
+
+.clk {
+    position: absolute;
+    transform-origin: bottom;
+    transition: width 2s ease;
+}
+
+.heur {
+    height: 80px;
+    width: 7px;
+    background-color: red;
+    top: calc(50% - 80px);
+    border-radius: 20px;
+}
+
+.min {
+    height: 105px;
+    width: 5px;
+    background-color: black;
+    top: calc(50% - 105px);
+    border-radius: 20px;
+}
+
+.sec {
+    height: 120px;
+    width: 3px;
+    background-color: #2593f8;
+    top: calc(50% - 120px);
+    border-radius: 20px;
+}
+
+.sec::before {
+    position: absolute;
+    transform-origin: bottom;
+    content: '';
+    border-radius: 20px;
+    width: 3px;
+    bottom: -1px;
+    height: 35px;
+    transform: rotate(180deg);
+    background-color: #2593f8;
+}
+
+.sec::after {
+    position: absolute;
+    transform-origin: bottom;
+    content: '';
+    bottom: -8px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: #2593f8;
+    border-radius: 50%;
+}
+
+.rights {
+    position: absolute;
+    text-align: center;
+    font-family: tahoma;
+    bottom: 3px;
+}
+
+.darkStyle {
+    background-color: #091a21;
+    color: white;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.whiteStyle {
+    background-color: white;
+}
+
+
+@media screen and (max-width: 450px) {
+    .container {
+        height: 290px;
+        width: 290px;
+    }
+
+    .heur {
+        height: 60px;
+        width: 6px;
+        top: calc(50% - 60px);
+    }
+
+    .min {
+        height: 85px;
+        width: 4px;
+        top: calc(50% - 85px);
+    }
+
+    .sec {
+        height: 90px;
+        width: 3px;
+        top: calc(50% - 90px);
+    }
+
+    .sec::before {
+        height: 25px;
+        width: 3px;
+    }
+}
