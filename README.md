@@ -1,8 +1,7 @@
-
 # Clock JavaScript Project Featuring Dark/Light Mode
 
 ![127 0 0 1_5500_](https://user-images.githubusercontent.com/96151694/176801800-56e4db00-3d4b-4b16-8b18-588314132b68.png)
-![127 0 0 1_5500_ (1)](https://user-images.githubusercontent.com/96151694/176801789-05810a2b-6bd2-483a-81bb-ba08bf47d9d0.png)
+![127 0 0 1_5500_(1)](https://user-images.githubusercontent.com/96151694/176892513-fcad4f48-0db4-41b2-9b81-ab8afb276144.png)
 
 Clock Page Using Pure HTML CSS And JavaScript ...
 
