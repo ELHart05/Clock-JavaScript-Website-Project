@@ -116,6 +116,7 @@ body {
 
 .darkStyle {
     background-color: #091a21;
+    box-shadow: none;
     color: white;
 }
 

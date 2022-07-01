@@ -3,8 +3,7 @@ const h = document.querySelector(".heur"),
     s = document.querySelector(".sec"),
     btn = document.querySelector(".btn"),
     bg = document.querySelector("body"),
-    container = document.querySelector(".container"),
-    sound = new Audio("../images/sound.mp3");
+    container = document.querySelector(".container");
 
 var now = new Date();
 
@@ -18,7 +17,6 @@ function returnHour(value) {
 
 m.style.transform = `rotate(${new Date().getMinutes()*6}deg)`;
 h.style.transform = `rotate(${returnHour(new Date().getHours())*30}deg)`;
-sound.volume = 0.2;
 
 btn.addEventListener("click", function () {
     if (btn.className.includes("fa-sun")) {
@@ -34,7 +32,6 @@ btn.addEventListener("click", function () {
 })
 
 function turnTheClock() {
-    sound.play();
     s.style.transform = `rotate(${new Date().getSeconds()*6}deg)`;
     if (new Date().getSeconds() == 0) {
         m.style.transform = `rotate(${new Date().getMinutes()*6}deg)`;
